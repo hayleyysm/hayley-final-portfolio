@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Hayley Simone Moonsamy</title>
+
+    <!-- IMPORTANT -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="site-header">
+        <nav class="navbar">
+
+            <div class="nav-info">
+                <span>• JOHANNESBURG, SOUTH AFRICA</span>
+                <span id="clock">11:33 PM</span>
+                <span>26.2041° S, 28.0473° E</span>
+            </div>
+
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">HOME</a>
+                <a class="nav-link active" href="projects.html">MY PROJECTS</a>
+                <a class="nav-link" href="index.html#about">ABOUT</a>
+                <a class="nav-link" href="index.html#contact">CONTACT</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="fixed-email">
+        e : studio.hayd@gmail.com
+    </div>
+
+    <div class="fixed-socials">
+        <a href="#">IG</a>
+        <a href="#">IN</a>
+        <a href="#">X</a>
+        <a href="#">@</a>
+    </div>
+
+    <main class="projects-page">
+
+        <section class="page-title-block">
+            <h1>PROJECTS</h1>
+        </section>
+
+        <div class="projects-controls">
+
+            <div id="project-filter-buttons">
+                <button class="filter-btn active-filter">ALL</button>
+                <button class="filter-btn">DESIGN</button>
+                <button class="filter-btn">INTERACTIVE</button>
+            </div>
+
+            <input
+                type="text"
+                id="project-search"
+                placeholder="SEARCH PROJECTS..."
+            >
+
+        </div>
+
+        <section class="projects-grid">
+
+            <!-- SONDER -->
+
+            <article class="project-card">
+
+                <div class="project-card-preview checkered-card">
+                    01
+                </div>
+
+                <div class="project-card-info">
+
+                    <span>DESIGN</span>
+
+                    <h2>SONDER GROUP</h2>
+
+                    <p>
+                        Brand identity, web design, and client-facing visual
+                        design developed for a multidisciplinary creative agency.
+                    </p>
+
+                    <a href="project1.html">
+                        OPEN PROJECT
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- MALAIKA -->
+
+            <article class="project-card">
+
+                <div class="project-card-preview teal-grid">
+                    02
+                </div>
+
+                <div class="project-card-info">
+
+                    <span>DESIGN</span>
+
+                    <h2>HOUSE OF MALAIKA</h2>
+
+                    <p>
+                        Brand identity exploration featuring logo development,
+                        strategic thinking, presentation design, and social assets.
+                    </p>
+
+                    <a href="project2.html">
+                        OPEN PROJECT
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- TRAVEL -->
+
+            <article class="project-card">
+
+                <div class="project-card-preview orange-grid">
+                    03
+                </div>
+
+                <div class="project-card-info">
+
+                    <span>INTERACTIVE</span>
+
+                    <h2>TRAVEL TALK AFRICA</h2>
+
+                    <p>
+                        Interactive media and web design work created for an
+                        African travel news and destination discovery platform.
+                    </p>
+
+                    <a href="project3.html">
+                        OPEN PROJECT
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script>
+        const clock = document.getElementById("clock");
+
+        function updateClock() {
+            const now = new Date();
+
+            clock.textContent = now.toLocaleTimeString([], {
+                hour: "2-digit",
+                minute: "2-digit"
+            });
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>
