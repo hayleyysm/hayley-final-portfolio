@@ -11,13 +11,117 @@
 <body data-page="about">
     <header id="site-header"></header>
 
-    <main class="projects-page">
-        <section class="page-title-block">
-            <h1>About</h1>
+    <main class="about-page">
+
+        <section class="about-hero">
+            <h1 class="about-title" aria-label="About Hayley">
+                <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
+                <span class="title-space"></span>
+                <span>H</span><span>A</span><span>Y</span><span>L</span><span>E</span><span>Y</span>
+            </h1>
+
+            <div class="about-hero-buttons">
+                <a href="assets-about/documents/Hayley Corporate Resume.pdf" class="big-button" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="assets-about/documents/Hayley Referal.pdf" class="big-button" target="_blank" rel="noopener noreferrer">Referral</a>
+            </div>
+
+            <div class="hero-scroll">
+            <span>↓</span>
+            Scroll Down
+            </div>
+
         </section>
 
-        <section class="detail-panel active-panel">
-            <h2>Designing With Purpose</h2>
+        <section class="about-reel-section">
+            <div class="about-reel-text">
+                <p>My gallery recently</p>
+                <h2>Designing with purpose through interaction.</h2>
+            </div>
+
+            <div class="about-demo-reel">
+                <video autoplay muted loop playsinline>
+                    <source src="assets-videos/video/PhotoDump.mp4" type="video/mp4">
+                    Demo Reel
+                </video>
+            </div>
+
+            <div class="about-scroll-cue">
+                <span>↓</span>
+                Scroll Down
+            </div>
+        </section>
+
+        <section class="about-bag-section">
+            <div class="bag-heading">
+                <h2>What’s in my bag?</h2>
+                <p>Unpack to learn more about me.</p>
+                <p class="click-to-interact">click to interact</p>
+            </div>
+
+            <div class="bag-stage">
+                <button class="bag-visual" type="button" aria-label="Open bag">
+                    <img src="assets-about/bag.png" alt="Open my bag">
+                </button>
+
+                <div class="bag-items">
+                    <button class="bag-item" data-target="polaroid">
+                        <img src="assets-about/polaroid.png" alt="Polaroid">
+                    </button>
+
+                    <button class="bag-item" data-target="phone">
+                        <img src="assets-about/iphone.png" alt="iPhone">
+                    </button>
+
+                    <button class="bag-item" data-target="tablet">
+                        <img src="assets-about/drawing tablet.png" alt="Drawing tablet">
+                    </button>
+
+                    <button class="bag-item" data-target="glasses">
+                        <img src="assets-about/glasses.png" alt="Glasses">
+                    </button>
+
+                    <button class="bag-item" data-target="headphones">
+                        <img src="assets-about/headphones.png" alt="Headphones">
+                    </button>
+
+                    <button class="bag-item" data-target="laptop">
+                        <img src="assets-about/laptop.png" alt="Laptop">
+                    </button>
+
+                    <button class="bag-item" data-target="notebook">
+                        <img src="assets-about/notebook.png" alt="Notebook">
+                    </button>
+
+                    <button class="bag-item" data-target="book">
+                        <img src="assets-about/bukowski book.png" alt="Bukowski book">
+                    </button>
+
+                    <button class="bag-item" data-target="ipad">
+                        <img src="assets-about/ipad.png" alt="iPad">
+                    </button>
+
+                    <button class="bag-item" data-target="controller">
+                        <img src="assets-about/controller.png" alt="Controller">
+                    </button>
+
+                    <button class="bag-item" data-target="bible">
+                        <img src="assets-about/bible.png" alt="Bible">
+                    </button>
+
+                    <button class="bag-item" data-target="water">
+                        <img src="assets-about/water bottle.png" alt="Water bottle">
+                    </button>
+                </div>
+
+                <article class="bag-popup" id="bag-popup">
+                    <h3>Click the bag</h3>
+                    <p>Open the bag, then select an object to reveal more.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-bio-section">
+            <h2>Biography</h2>
 
             <p>
                 I’m Hayley Simone Moonsamy, a third-year Digital Arts student specialising in interactive media,
@@ -34,6 +138,7 @@
                 visual communication, and digital media practice.
             </p>
         </section>
+
     </main>
 </body>
 </html>
